@@ -2,8 +2,7 @@
 
 Prot2Motif predicts a motif profile for each protein sequence in a FASTA file.
 The repository contains the trained network checkpoint, its binary classifier,
-and the inference implementation; it does not include training or evaluation
-scripts or training datasets.
+and the inference implementation.
 
 ## Repository contents
 
