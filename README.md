@@ -7,7 +7,7 @@ scripts or training datasets.
 
 ## Repository contents
 
-- `model/prot2motif_model.pt` — trained Seq2Seq checkpoint (epoch 9; hidden size 256).
+- `model/prot2motif_model.pt` — trained prot2motif checkpoint.
 - `model/classifier_LogisticRegression_decoder.pkl` — trained Logistic Regression
   classifier used to select proteins for motif generation.
 - `inference/` — network architecture, amino-acid tokenizer, and inference CLI.
