@@ -6,12 +6,9 @@ and the inference implementation.
 
 ## Repository contents
 
-<<<<<<< HEAD
 - `model/prot2motif_model.pt` — trained prot2motif checkpoint.
-=======
 - `model/prot2motif_model.pt` — trained Seq2Seq checkpoint (epoch 9; hidden size 256).
 - `prot2motif.pt` — checkpoint explicitly used by the example notebook.
->>>>>>> 9aaec27 (add notebook example)
 - `model/classifier_LogisticRegression_decoder.pkl` — trained Logistic Regression
   classifier used to select proteins for motif generation.
 - `inference/` — network architecture, amino-acid tokenizer, and inference CLI.
@@ -49,18 +46,6 @@ python -m inference.run_generate \
 
 `--max-proteins 10` can be used for a small test run. If the model artifacts are
 stored elsewhere, pass their paths with `--model` and `--classifier`.
-
-## Example notebook
-
-The `example/inference_example.ipynb` notebook runs inference on
-`example/sequence_example.fasta` and visualizes the predicted motif profiles.
-It explicitly passes the top-level `prot2motif.pt` checkpoint, rather than the
-CLI's default checkpoint in `model/`. Install the dependencies above, then
-launch Jupyter from the repository root:
-
-```bash
-jupyter lab example/inference_example.ipynb
-```
 
 The compressed NPZ output contains:
 
