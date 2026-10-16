@@ -6,8 +6,7 @@ and the inference implementation.
 
 ## Repository contents
 
-- `model/prot2motif_model.pt` — trained prot2motif checkpoint.
-- `model/prot2motif_model.pt` — trained Seq2Seq checkpoint (epoch 9; hidden size 256).
+- `model/prot2motif.pt` — trained prot2motif checkpoint.
 - `prot2motif.pt` — checkpoint explicitly used by the example notebook.
 - `model/classifier_LogisticRegression_decoder.pkl` — trained Logistic Regression
   classifier used to select proteins for motif generation.
